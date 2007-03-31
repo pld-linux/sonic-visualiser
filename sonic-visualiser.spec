@@ -1,8 +1,11 @@
+# TODO:
+# - no idea why it links libvamp-hostsdk.so 
+#
 %define	_beta	pre3
 Summary:	Sonic Visualiser is an application for viewing and analysing the contents of music audio files
 Name:		sonic-visualiser
 Version:	1.0
-Release:	0.1
+Release:	0.5
 License:	GPL v2
 Group:		Applications
 Source0:	http://dl.sourceforge.net/sv1/%{name}-%{version}%{_beta}.tar.gz
