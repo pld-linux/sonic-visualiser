@@ -1,5 +1,8 @@
 # TODO:
 # - no idea why it links libvamp-hostsdk.so 
+# - it works only with jackd;
+#   it looks that in AudioTargetFactory::createCallbackTarget it calls abstract
+#   AudioCallbackPlayTarget::isOK and AudioCallbackPlayTarget::~AudioCallbackPlayTarget
 # - check BReq; 
 # - only one file packaged?
 #
