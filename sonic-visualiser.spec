@@ -11,7 +11,7 @@ URL:		www.sonicvisualiser.org
 BuildRequires:	QtNetwork-devel
 BuildRequires:	QtXml-devel
 BuildRequires:	bzip2-devel
-BuildRequires:	fftw3-devel
+BuildRequires:	fftw3-single-devel
 BuildRequires:	jack-audio-connection-kit-devel
 BuildRequires:	libfishsound-devel
 BuildRequires:	liblo-devel
