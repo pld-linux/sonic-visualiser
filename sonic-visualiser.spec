@@ -7,7 +7,8 @@
 # - only one file packaged?
 #
 %define	_beta	pre3
-Summary:	Sonic Visualiser is an application for viewing and analysing the contents of music audio files
+Summary:	Sonic Visualiser - an application for viewing and analysing the contents of music audio files
+Summary(pl.UTF-8):	Sonic Visualiser - aplikacja do oglądania i analizy zawartości plików dźwiękowych
 Name:		sonic-visualiser
 Version:	1.0
 Release:	0.5
@@ -15,7 +16,7 @@ License:	GPL v2
 Group:		Applications
 Source0:	http://dl.sourceforge.net/sv1/%{name}-%{version}%{_beta}.tar.gz
 # Source0-md5:	e94766b062911e8b4e841ca2dea5eb09
-URL:		www.sonicvisualiser.org
+URL:		http://www.sonicvisualiser.org/
 BuildRequires:	QtNetwork-devel
 BuildRequires:	QtXml-devel
 BuildRequires:	bzip2-devel
@@ -48,6 +49,19 @@ annotation capabilities to help you to describe what you find, and the
 ability to run automated annotation and analysis plugins in the new
 Vamp analysis plugin format.
 
+%description -l pl.UTF-8
+Sonic Visualiser to aplikacja do oglądania i analizy zawartości plików
+dźwiękowych z muzyką.
+
+Program ma być takim, po który sięga się, aby przestudiować jakieś
+nagranie muzyczne, a nie tylko go posłuchać.
+
+Ma wiele możliwości stworzonych aby uczynić badanie danych dźwiękowych
+tak odkrywczym i zabawnym jak to tylko możliwe. Ma także duże
+możliwości pozwalające na opisywanie tego co widać i możliwość
+automatycznego uruchamiania wtyczek notatek i analizy w nowym formacie
+wtyczek analizujących Vamp.
+
 %prep
 %setup -q -n %{name}-%{version}%{_beta}
 
@@ -59,8 +73,9 @@ qt4-qmake
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_bindir}
-install sv/sonic-visualiser $RPM_BUILD_ROOT/%{_bindir}
+install -d $RPM_BUILD_ROOT%{_bindir}
+
+install sv/sonic-visualiser $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
