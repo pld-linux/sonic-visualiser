@@ -8,7 +8,7 @@
 #
 %define	_beta	pre3
 Summary:	Sonic Visualiser - an application for viewing and analysing the contents of music audio files
-Summary(pl.UTF-8):	Sonic Visualiser - aplikacja do oglądania i analizy zawartości plików dźwiękowych
+Summary(pl.UTF-8):	Sonic Visualiser - przeglądarka i analizator zawartości plików dźwiękowych
 Name:		sonic-visualiser
 Version:	1.0
 Release:	0.5
@@ -50,11 +50,11 @@ ability to run automated annotation and analysis plugins in the new
 Vamp analysis plugin format.
 
 %description -l pl.UTF-8
-Sonic Visualiser to aplikacja do oglądania i analizy zawartości plików
-dźwiękowych z muzyką.
+Sonic Visualiser przeglądarką i analizatorem zawartości plików
+dźwiękowych.
 
-Program ma być takim, po który sięga się, aby przestudiować jakieś
-nagranie muzyczne, a nie tylko go posłuchać.
+Sonic Visualiser stara się być programem, po który sięga się bardziej
+w celu przestudiowania nagrania muzycznego, niż jedynie jego odsłuchu.
 
 Ma wiele możliwości stworzonych aby uczynić badanie danych dźwiękowych
 tak odkrywczym i zabawnym jak to tylko możliwe. Ma także duże
