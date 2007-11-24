@@ -18,6 +18,7 @@ Source0:	http://dl.sourceforge.net/sv1/%{name}-%{version}.tar.gz
 URL:		http://www.sonicvisualiser.org/
 BuildRequires:	QtNetwork-devel
 BuildRequires:	QtXml-devel
+BuildRequires:	QtGui-devel
 BuildRequires:	bzip2-devel
 BuildRequires:	fftw3-single-devel
 BuildRequires:	jack-audio-connection-kit-devel
@@ -30,6 +31,7 @@ BuildRequires:	libraptor-devel
 BuildRequires:	libsamplerate-devel
 BuildRequires:	libsndfile-devel
 BuildRequires:	portaudio-devel
+BuildRequires:	qt4-build
 BuildRequires:	qt4-qmake
 BuildRequires:	vamp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -66,7 +68,7 @@ wtyczek analizujących Vamp.
 
 %build
 qt4-qmake
-%{__make} \
+%{__make} -j1 \
 	CFLAGS="%{rpmcflags}" \
 	LDFLAGS="%{rpmldflags}"
 
