@@ -1,16 +1,15 @@
 # TODO:
-# - no idea why it links libvamp-hostsdk.so 
-# - it works only with jackd;
-#   it looks that in AudioTargetFactory::createCallbackTarget it calls abstract
-#   AudioCallbackPlayTarget::isOK and AudioCallbackPlayTarget::~AudioCallbackPlayTarget
-# - check BReq; 
+# - It segfaults when jack and oss are not avaiable. It tries to use portaudio
+#   Pa_GetDefaultOutputDevice. Pa_GetDefaultHostApi is "oss", unfortunatly
+#   without any usefull device.
+# 
 # - only one file packaged?
 #
 Summary:	Sonic Visualiser - an application for viewing and analysing the contents of music audio files
 Summary(pl.UTF-8):	Sonic Visualiser - przeglądarka i analizator zawartości plików dźwiękowych
 Name:		sonic-visualiser
 Version:	1.0
-Release:	1.1
+Release:	2
 License:	GPL v2
 Group:		Applications
 Source0:	http://dl.sourceforge.net/sv1/%{name}-%{version}.tar.gz
