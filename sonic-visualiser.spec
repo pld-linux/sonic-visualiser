@@ -30,8 +30,8 @@ BuildRequires:	libraptor-devel
 BuildRequires:	libsamplerate-devel
 BuildRequires:	libsndfile-devel
 BuildRequires:	portaudio-devel
-BuildRequires:	qt4-build
-BuildRequires:	qt4-qmake
+BuildRequires:	qt4-build >= 4.3.3-3
+BuildRequires:	qt4-qmake >= 4.3.3-3
 BuildRequires:	vamp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -66,7 +66,7 @@ wtyczek analizujących Vamp.
 %setup -q
 
 %build
-qt4-qmake
+qmake-qt4
 %{__make} -j1 \
 	CFLAGS="%{rpmcflags}" \
 	LDFLAGS="%{rpmldflags}"
