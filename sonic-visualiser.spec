@@ -22,6 +22,7 @@ BuildRequires:	bzip2-devel
 BuildRequires:	fftw3-single-devel
 BuildRequires:	jack-audio-connection-kit-devel
 BuildRequires:	libfishsound-devel
+BuildRequires:	libid3tag-devel
 BuildRequires:	liblo-devel
 BuildRequires:	liblrdf-devel
 BuildRequires:	libmad-devel
@@ -30,8 +31,11 @@ BuildRequires:	libraptor-devel
 BuildRequires:	libsamplerate-devel
 BuildRequires:	libsndfile-devel
 BuildRequires:	portaudio-devel
+BuildRequires:	pulseaudio-devel
 BuildRequires:	qt4-build >= 4.3.3-3
 BuildRequires:	qt4-qmake >= 4.3.3-3
+BuildRequires:	rasqal-devel
+BuildRequires:	redland-devel
 BuildRequires:	rubberband-devel
 BuildRequires:	vamp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
