@@ -8,12 +8,12 @@
 Summary:	Sonic Visualiser - an application for viewing and analysing the contents of music audio files
 Summary(pl.UTF-8):	Sonic Visualiser - przeglądarka i analizator zawartości plików dźwiękowych
 Name:		sonic-visualiser
-Version:	1.0
-Release:	2
+Version:	1.7.1
+Release:	0.1
 License:	GPL v2
 Group:		Applications
-Source0:	http://dl.sourceforge.net/sv1/%{name}-%{version}.tar.gz
-# Source0-md5:	1df2731920628b41563153fc37959ed5
+Source0:	http://dl.sourceforge.net/sv1/%{name}-%{version}.tar.bz2
+# Source0-md5:	1d71511cd584e25159f56f41d6344446
 URL:		http://www.sonicvisualiser.org/
 BuildRequires:	QtNetwork-devel
 BuildRequires:	QtXml-devel
@@ -32,6 +32,7 @@ BuildRequires:	libsndfile-devel
 BuildRequires:	portaudio-devel
 BuildRequires:	qt4-build >= 4.3.3-3
 BuildRequires:	qt4-qmake >= 4.3.3-3
+BuildRequires:	rubberband-devel
 BuildRequires:	vamp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
